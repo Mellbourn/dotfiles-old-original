@@ -20,7 +20,7 @@ fi
     . /usr/local/share/liquidprompt
   fi
 
-export HOMEBREW_GITHUB_API_TOKEN="9b5983737dd7162078fe7ad3ee5f16eff31f6942"
+source ~/.secrets
 
 export EDITOR=/usr/local/bin/code
 
