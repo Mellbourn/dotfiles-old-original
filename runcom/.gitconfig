@@ -1,0 +1,41 @@
+[user]
+	email = klas.mellbourn@klarna.com
+	name = Klas Mellbourn
+[core]
+	excludesfile = /Users/klas.mellbourn/.gitignore_global
+	editor = code --wait
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/klas.mellbourn/.stCommitMsg
+[mergetool]
+	keepbackup = false
+[alias]
+	lol = log --graph --all
+	lo = log --graph
+	ci = commit
+	br = branch
+	co = checkout
+	st = status
+	mt = mergetool
+	dt = difftool
+	unstage = reset HEAD --
+	last = log -1 HEAD
+[fetch]
+	prune = true
+[log]
+	decorate = short
+	abbrevcommit = true
+	date = relative
+[rerere]
+	enabled = true
+[pull]
+	rebase = true
+[rebase]
+	autoStash = true
+[format]
+	pretty = %C(yellow)%h %C(magenta)%<(15,trunc)%an %C(cyan)%<(12,trunc)%cd %C(auto)%d%Creset %s
