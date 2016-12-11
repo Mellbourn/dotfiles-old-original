@@ -26,7 +26,6 @@ casks=(
     charles
     day-o
     flux
-    gitx
     google-chrome
     google-drive
     google-photos-backup
