@@ -1,4 +1,6 @@
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+if ! hash brew 2>/dev/null; then
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
 
 brew update
 brew upgrade
@@ -6,9 +8,9 @@ brew upgrade
 apps=(
     bash-completion
     chromedriver
-    docker-completion
-    docker-compose-completion
-    docker-machine-completion
+    homebrew/completions/docker-completion
+    homebrew/completions/docker-compose-completion
+    homebrew/completions/docker-machine-completion
     git
     git-number
     liquidprompt
@@ -22,13 +24,17 @@ casks=(
     atom
     bartender
     charles
+    day-o
+    flux
     gitx
     google-chrome
     google-drive
     google-photos-backup
+    intellij-idea
     java
     keeweb
     keycue
+    logitech-gaming-software
     slack
     sourcetree
     spectacle
