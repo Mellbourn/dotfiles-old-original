@@ -15,6 +15,7 @@ fi
 #    GIT_PROMPT_THEME=Default
 #    source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
 #  fi
+alias g=git
 
   if [ -f /usr/local/share/liquidprompt ]; then
     . /usr/local/share/liquidprompt
@@ -23,7 +24,9 @@ fi
 source ~/.secrets
 
 export EDITOR=/usr/local/bin/code
+export PATH="$PATH:$(yarn global bin)"
 
+# note that command line completion does not work well for this alias
 alias g=git
 alias gn='git number --column'
 alias ga='git number add'
