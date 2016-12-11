@@ -1,27 +1,27 @@
-source ~/.profile
+if [ -f ~/.profile ]; then
+  source ~/.profile
+fi
 
 if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
 
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+if [ -f /usr/local/opt/nvm/nvm.sh ]; then
+  export NVM_DIR="$HOME/.nvm"
+  . "/usr/local/opt/nvm/nvm.sh"
+fi
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
-#if [ -f "$(brew --prefix bash-git-prompt)/share/gitprompt.sh" ]; then
-#    GIT_PROMPT_THEME=Default
-#    source "$(brew --prefix bash-git-prompt)/share/gitprompt.sh"
-#  fi
-alias g=git
+if [ -f /usr/local/share/liquidprompt ]; then
+  . /usr/local/share/liquidprompt
+fi
 
-  if [ -f /usr/local/share/liquidprompt ]; then
-    . /usr/local/share/liquidprompt
-  fi
-
-source ~/.secrets
+if [ -f ~/.secrets ]; then
+  source ~/.secrets
+fi
 
 export EDITOR=/usr/local/bin/code
 export PATH="$PATH:$(yarn global bin)"
