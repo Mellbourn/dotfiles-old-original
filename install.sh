@@ -27,6 +27,7 @@ casks=(
     bartender
     charles
     day-o
+    firefox
     flux
     google-chrome
     google-drive
