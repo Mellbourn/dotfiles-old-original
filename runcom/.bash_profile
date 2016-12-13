@@ -19,6 +19,9 @@ if [ -f /usr/local/share/liquidprompt ]; then
   . /usr/local/share/liquidprompt
 fi
 
+eval $(thefuck --alias)
+alias f="fuck"
+
 if [ -f ~/.secrets ]; then
   source ~/.secrets
 fi

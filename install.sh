@@ -15,6 +15,7 @@ apps=(
     git-number
     liquidprompt
     nvm
+    thefuck
     tree
     yarn
 )
