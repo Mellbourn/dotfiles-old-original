@@ -34,6 +34,7 @@ casks=(
     google-drive
     google-photos-backup
     intellij-idea
+    iterm2
     java
     keeweb
     keycue
@@ -48,3 +49,4 @@ brew cask install "${casks[@]}"
 
 
 defaults write com.apple.finder AppleShowAllFiles YES
+sudo nvram SystemAudioVolume=%80
