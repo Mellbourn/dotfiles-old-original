@@ -39,3 +39,5 @@ alias f="fuck"
 alias g=git
 alias gn='git number --column'
 alias ga='git number add'
+
+alias eg=egrep
