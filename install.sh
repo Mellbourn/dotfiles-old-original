@@ -24,6 +24,7 @@ apps=(
 brew install "${apps[@]}"
 
 casks=(
+    alfred
     atom
     bartender
     charles
@@ -46,6 +47,5 @@ casks=(
 )
 
 brew cask install "${casks[@]}"
-
 
 defaults write com.apple.finder AppleShowAllFiles YES
