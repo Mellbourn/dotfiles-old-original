@@ -13,6 +13,16 @@ fi
 ### environment variables
 export EDITOR=/usr/local/bin/code
 
+if [ "$USER" == "Klas" ]; then
+  echo at home
+  export AT_HOME=1
+  export AT_WORK=0
+else
+  echo at work
+  export AT_HOME=0
+  export AT_WORK=1
+fi
+
 ### prompt
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
