@@ -1,8 +1,7 @@
 [user]
-	email = klas.mellbourn@klarna.com
 	name = Klas Mellbourn
 [core]
-	excludesfile = /Users/klas.mellbourn/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	editor = code --wait
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
@@ -11,9 +10,13 @@
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [commit]
-	template = /Users/klas.mellbourn/.stCommitMsg
+	template = ~/.stCommitMsg
 [mergetool]
 	keepbackup = false
+[diff]
+    tool = sourcetree
+[merge]
+    tool = sourcetree
 [alias]
 	lol = log --graph --all
 	lo = log --graph
