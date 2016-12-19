@@ -44,6 +44,7 @@ casks=(
     sourcetree
     spectacle
     visual-studio-code
+    webstorm
 )
 
 brew cask install "${casks[@]}"
