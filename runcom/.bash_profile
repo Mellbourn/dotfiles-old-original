@@ -51,3 +51,6 @@ alias gn='git number --column'
 alias ga='git number add'
 
 alias eg=egrep
+
+# this line is added by iTerm command "Install shell integration"
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
