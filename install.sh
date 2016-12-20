@@ -45,6 +45,7 @@ casks=(
     spectacle
     visual-studio-code
     virtualbox
+    vlc
     webstorm
 )
 
