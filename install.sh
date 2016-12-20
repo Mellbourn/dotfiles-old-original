@@ -54,7 +54,23 @@ brew cask install "${casks[@]}"
 defaults write com.apple.finder AppleShowAllFiles YES
 # sets the first window shown in finder to home
 defaults write com.apple.finder NewWindowTarget PfHm
+# Finder: show status bar
+defaults write com.apple.finder ShowStatusBar -bool true
 # Show Path bar in Finder
 defaults write com.apple.finder ShowPathbar -bool true
+# Use list view in all Finder windows by default
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 # Save screenshots to Pictures
 defaults write com.apple.screencapture location "${HOME}/Pictures"
+# Trackpad: enable tap to click for this user and for the login screen - don't work!
+#defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+#defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+#defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+
+# THESE SEEM DANGEROUS, NOT CONSISTENT, destroys key repeat in Chrome?
+# Set a blazingly fast keyboard repeat rate
+#defaults write NSGlobalDomain KeyRepeat -int 1
+#defaults write NSGlobalDomain InitialKeyRepeat -int 10
+
+# Set the icon size of Dock items to 24 pixels
+defaults write com.apple.dock tilesize -int 24
