@@ -51,3 +51,5 @@ casks=(
 brew cask install "${casks[@]}"
 
 defaults write com.apple.finder AppleShowAllFiles YES
+# sets the first window shown in finder to home
+defaults write com.apple.finder NewWindowTarget PfHm
