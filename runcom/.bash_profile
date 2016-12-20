@@ -14,11 +14,9 @@ fi
 export EDITOR=/usr/local/bin/code
 
 if [ "$USER" == "Klas" ]; then
-  echo at home
   export AT_HOME=1
   export AT_WORK=0
 else
-  echo at work
   export AT_HOME=0
   export AT_WORK=1
 fi
