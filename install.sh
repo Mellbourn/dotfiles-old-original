@@ -53,3 +53,7 @@ brew cask install "${casks[@]}"
 defaults write com.apple.finder AppleShowAllFiles YES
 # sets the first window shown in finder to home
 defaults write com.apple.finder NewWindowTarget PfHm
+# Show Path bar in Finder
+defaults write com.apple.finder ShowPathbar -bool true
+# Save screenshots to Pictures
+defaults write com.apple.screencapture location "${HOME}/Pictures"
