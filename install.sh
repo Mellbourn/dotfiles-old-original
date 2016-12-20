@@ -58,8 +58,8 @@ defaults write com.apple.finder NewWindowTarget PfHm
 defaults write com.apple.finder ShowStatusBar -bool true
 # Show Path bar in Finder
 defaults write com.apple.finder ShowPathbar -bool true
-# Use list view in all Finder windows by default
-defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+# Use list view in all Finder windows by default, NOT STABLE?
+#defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 # Save screenshots to Pictures
 defaults write com.apple.screencapture location "${HOME}/Pictures"
 # Trackpad: enable tap to click for this user and for the login screen - don't work!
