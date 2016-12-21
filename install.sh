@@ -1,3 +1,7 @@
+###############################################################################
+# Homebrew                                                                      #
+###############################################################################
+
 if ! hash brew 2>/dev/null; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
@@ -51,6 +55,9 @@ casks=(
 
 brew cask install "${casks[@]}"
 
+###############################################################################
+# Finder                                                                      #
+###############################################################################
 defaults write com.apple.finder AppleShowAllFiles YES
 # sets the first window shown in finder to home
 defaults write com.apple.finder NewWindowTarget PfHm
@@ -60,6 +67,10 @@ defaults write com.apple.finder ShowStatusBar -bool true
 defaults write com.apple.finder ShowPathbar -bool true
 # Use list view in all Finder windows by default, NOT STABLE?
 #defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+
+###############################################################################
+# Miscellaneous                                                               #
+###############################################################################
 # Save screenshots to Pictures
 defaults write com.apple.screencapture location "${HOME}/Pictures"
 # Trackpad: enable tap to click for this user and for the login screen - don't work!
@@ -67,10 +78,31 @@ defaults write com.apple.screencapture location "${HOME}/Pictures"
 #defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 #defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
+###############################################################################
+# Keyboard                                                                    #
+###############################################################################
 # THESE SEEM DANGEROUS, NOT CONSISTENT, destroys key repeat in Chrome?
 # Set a blazingly fast keyboard repeat rate
-#defaults write NSGlobalDomain KeyRepeat -int 1
-#defaults write NSGlobalDomain InitialKeyRepeat -int 10
+defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write NSGlobalDomain InitialKeyRepeat -int 25
 
+###############################################################################
+# Dock                                                                        #
+###############################################################################
 # Set the icon size of Dock items to 24 pixels
 defaults write com.apple.dock tilesize -int 24
+
+###############################################################################
+# Safari & WebKit                                                             #
+###############################################################################
+
+# Show the full URL in the address bar (note: this still hides the scheme)
+defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
+# Set Safari’s home page to `about:blank` for faster loading
+defaults write com.apple.Safari HomePage -string "about:blank"
+# Enable the Develop menu and the Web Inspector in Safari
+defaults write com.apple.Safari IncludeDevelopMenu -bool true
+# Enable Safari’s debug menu
+defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
+# Update extensions automatically
+defaults write com.apple.Safari InstallExtensionUpdatesAutomatically -bool true
