@@ -50,5 +50,9 @@ alias ga='git number add'
 
 alias eg=egrep
 
+# up and down arrow now searches history
+bind '"[A":history-search-backward'
+bind '"[B":history-search-forward'
+
 # this line is added by iTerm command "Install shell integration"
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
