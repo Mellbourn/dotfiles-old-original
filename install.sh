@@ -44,6 +44,7 @@ casks=(
     keeweb
     keycue
     logitech-gaming-software
+    plex-media-player
     slack
     sourcetree
     spectacle
