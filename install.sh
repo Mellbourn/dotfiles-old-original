@@ -48,6 +48,7 @@ casks=(
     slack
     sourcetree
     spectacle
+    tripmode
     visual-studio-code
     virtualbox
     vlc
