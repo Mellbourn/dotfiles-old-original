@@ -108,3 +108,7 @@ defaults write com.apple.Safari IncludeDevelopMenu -bool true
 defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
 # Update extensions automatically
 defaults write com.apple.Safari InstallExtensionUpdatesAutomatically -bool true
+
+
+# set TextEdit default format to plain text
+defaults write com.apple.TextEdit RichText -int 0
