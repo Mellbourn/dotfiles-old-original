@@ -1,4 +1,17 @@
 ###############################################################################
+# Klas Mellbourn's dotfile
+#
+# https://github.com/Mellbourn/dotfiles
+# https://dotfiles.github.io/
+# 
+# Many settings inspired by
+# https://github.com/mathiasbynens/dotfiles/blob/master/.macos
+#
+# Nice links here
+# https://medium.com/@webprolific/getting-started-with-dotfiles-43c3602fd789#.2d3cfjv7d
+###############################################################################
+
+###############################################################################
 # Homebrew                                                                      #
 ###############################################################################
 
