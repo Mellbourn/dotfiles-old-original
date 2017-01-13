@@ -69,6 +69,8 @@ defaults write com.apple.finder ShowStatusBar -bool true
 defaults write com.apple.finder ShowPathbar -bool true
 # Use list view in all Finder windows by default, NOT STABLE?
 #defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+# hide all icons on from desktop
+defaults write com.apple.finder CreateDesktop false
 
 ###############################################################################
 # Miscellaneous                                                               #
