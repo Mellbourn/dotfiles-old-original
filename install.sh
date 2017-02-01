@@ -58,6 +58,7 @@ casks=(
     keycue
     logitech-gaming-software
     plex-media-player
+    rowanj-gitx
     slack
     sourcetree
     spectacle
