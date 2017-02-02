@@ -49,6 +49,7 @@ casks=(
     day-o
     firefox
     flux
+    flycut
     google-chrome
     google-drive
     google-photos-backup
@@ -74,8 +75,6 @@ brew cask install "${casks[@]}"
 
 # automate mac store installation
 mas signin klas@mellbourn.net 
-# flycut
-mas install 442160987
 
 ###############################################################################
 # Finder                                                                      #
