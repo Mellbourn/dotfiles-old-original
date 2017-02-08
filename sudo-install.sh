@@ -7,3 +7,8 @@ sudo ln -sf "/Applications/Xcode.app/Contents/Developer/Applications/Simulator.a
 # Update App Store apps
 ###############################################################################
 sudo softwareupdate -i -a
+
+###############################################################################
+# installations for Klarna
+###############################################################################
+sudo gem install cocoapods --pre
