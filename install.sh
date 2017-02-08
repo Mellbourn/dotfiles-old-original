@@ -19,6 +19,7 @@ if ! hash brew 2>/dev/null; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+brew tap git-time-metric/gtm
 brew update
 brew upgrade
 
@@ -30,6 +31,7 @@ apps=(
     homebrew/completions/docker-machine-completion
     git
     git-number
+    gtm
     liquidprompt
     mas
     nvm
