@@ -44,6 +44,7 @@ apps=(
 brew install "${apps[@]}"
 
 casks=(
+    adobe-reader
     alfred
     atom
     bartender
