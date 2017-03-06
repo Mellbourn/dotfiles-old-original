@@ -32,6 +32,7 @@ apps=(
     homebrew/completions/docker-machine-completion
     git
     git-number
+    gradle
     gtm
     liquidprompt
     mas
