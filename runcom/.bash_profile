@@ -40,6 +40,10 @@ export PATH="$PATH:$(yarn global bin)"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
+eval "$(pyenv init -)"
+# pyenv-virtualenv
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+
 ### aliases
 eval $(thefuck --alias)
 alias f="fuck"

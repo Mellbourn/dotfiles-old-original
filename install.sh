@@ -35,6 +35,8 @@ apps=(
     liquidprompt
     mas
     nvm
+    pyenv
+    pyenv-virtualenv
     thefuck
     tree
     yarn
