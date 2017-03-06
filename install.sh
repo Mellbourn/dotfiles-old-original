@@ -24,6 +24,7 @@ brew update
 brew upgrade
 
 apps=(
+    ansible
     bash-completion
     chromedriver
     homebrew/completions/docker-completion
