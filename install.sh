@@ -66,6 +66,7 @@ casks=(
     rowanj-gitx
     slack
     sourcetree
+    skype
     spectacle
     tripmode
     visual-studio-code
