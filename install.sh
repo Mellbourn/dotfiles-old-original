@@ -40,6 +40,7 @@ apps=(
     pyenv
     pyenv-virtualenv
     thefuck
+    tldr
     tree
     yarn
 )
