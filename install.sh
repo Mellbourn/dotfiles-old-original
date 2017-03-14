@@ -82,6 +82,9 @@ casks=(
 
 brew cask install "${casks[@]}"
 
+# supress Spotlight indexing of git folder
+touch $HOME/git/.metadata_never_index
+
 # automate mac store installation
 mas signin klas@mellbourn.net 
 
