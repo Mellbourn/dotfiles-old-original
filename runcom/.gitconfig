@@ -9,12 +9,14 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
 [commit]
 	template = ~/.stCommitMsg
 [mergetool]
 	keepbackup = false
 [diff]
-    tool = sourcetree
+    tool = vscode
 [merge]
     tool = sourcetree
 [alias]
