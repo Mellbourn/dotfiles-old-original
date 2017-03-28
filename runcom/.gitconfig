@@ -17,6 +17,8 @@
 	keepbackup = false
 [diff]
     tool = vscode
+[difftool]
+  prompt = false
 [merge]
     tool = sourcetree
 [alias]
