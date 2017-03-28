@@ -10,6 +10,10 @@ if [ -f ~/.secrets ]; then
   source ~/.secrets
 fi
 
+if [ -f ~/.local_settings ]; then
+  source ~/.local_settings
+fi
+
 ### environment variables
 export EDITOR=/usr/local/bin/code
 
