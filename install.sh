@@ -64,6 +64,7 @@ casks=(
     intellij-idea
     iterm2
     java
+    kdiff3
     keeweb
     keycue
     logitech-gaming-software
