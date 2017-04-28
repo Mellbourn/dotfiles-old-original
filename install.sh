@@ -34,6 +34,7 @@ apps=(
     git-number
     gradle
     gtm
+    kubernetes-cli
     liquidprompt
     mas
     nvm
