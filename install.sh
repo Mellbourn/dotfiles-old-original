@@ -3,7 +3,7 @@
 #
 # https://github.com/Mellbourn/dotfiles
 # https://dotfiles.github.io/
-# 
+#
 # Many settings inspired by
 # https://github.com/mathiasbynens/dotfiles/blob/master/.macos
 #
@@ -89,7 +89,7 @@ brew cask install "${casks[@]}"
 touch $HOME/git/.metadata_never_index
 
 # automate mac store installation
-mas signin klas@mellbourn.net 
+mas signin klas@mellbourn.net
 
 ###############################################################################
 # Finder                                                                      #
