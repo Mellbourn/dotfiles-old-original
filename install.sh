@@ -27,13 +27,13 @@ apps=(
     ansible
     bash-completion
     chromedriver
-    homebrew/completions/docker-completion
-    homebrew/completions/docker-compose-completion
-    homebrew/completions/docker-machine-completion
     git
     git-number
     gradle
     gtm
+    homebrew/completions/docker-completion
+    homebrew/completions/docker-compose-completion
+    homebrew/completions/docker-machine-completion
     kubernetes-cli
     liquidprompt
     mas
@@ -72,13 +72,13 @@ casks=(
     logitech-gaming-software
     plex-media-player
     rowanj-gitx
+    skype
     slack
     sourcetree
-    skype
     spectacle
     tripmode
-    visual-studio-code
     virtualbox
+    visual-studio-code
     vlc
     webstorm
 )
