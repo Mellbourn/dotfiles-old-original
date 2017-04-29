@@ -5,7 +5,7 @@
 	editor = code --wait
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
@@ -15,12 +15,13 @@
 	template = ~/.stCommitMsg
 [mergetool]
 	keepbackup = false
+	prompt = false
 [diff]
-    tool = vscode
+    tool = kdiff3
 [difftool]
   prompt = false
 [merge]
-    tool = sourcetree
+    tool = kdiff3
 [alias]
 	lol = log --graph --all
 	lo = log --graph
