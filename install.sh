@@ -41,7 +41,9 @@ apps=(
     pyenv
     pyenv-virtualenv
     thefuck
+    tig
     tldr
+    tmux
     tree
     watch
     yarn
