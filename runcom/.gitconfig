@@ -8,12 +8,13 @@
 [mergetool]
 	keepbackup = false
 	prompt = false
-[diff]
-    tool = kdiff3
-	guitool = vscode
     trustExitCode = true
 [difftool]
     prompt = false
+    trustExitCode = true
+[diff]
+    tool = kdiff3
+	guitool = vscode
 [merge]
     tool = kdiff3
 [alias]
@@ -47,7 +48,6 @@
     cmd = code --wait --diff $LOCAL $REMOTE
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 
