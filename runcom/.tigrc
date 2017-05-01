@@ -1,0 +1,4 @@
+bind generic 9 !@sh -c "echo -n %(commit) | xclip -selection c"
+bind refs    R !git reset --hard %(commit)
+bind refs    3 !git rebase -i %(branch)
+bind generic W :!git reflog
