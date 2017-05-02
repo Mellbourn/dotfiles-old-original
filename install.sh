@@ -27,6 +27,7 @@ apps=(
     ansible
     bash-completion
     chromedriver
+    gettext
     git
     git-number
     gradle
@@ -40,6 +41,7 @@ apps=(
     nvm
     pyenv
     pyenv-virtualenv
+    pyenv-virtualenvwrapper
     thefuck
     tig
     tldr
@@ -87,11 +89,15 @@ casks=(
 
 brew cask install "${casks[@]}"
 
+brew link --force gettext
+
+pip install virtualenvwrapper
+
 # supress Spotlight indexing of git folder
 touch $HOME/git/.metadata_never_index
 
 # automate mac store installation
-mas signin klas@mellbourn.net
+#mas signin klas@mellbourn.net
 
 ###############################################################################
 # Finder                                                                      #

@@ -15,6 +15,9 @@ if [ -f ~/.local_settings ]; then
 fi
 
 ### environment variables
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 export EDITOR=/usr/local/bin/code
 
 if [ "$USER" == "Klas" ]; then
@@ -49,6 +52,9 @@ export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 eval "$(pyenv init -)"
 # pyenv-virtualenv
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+
+export WORKON_HOME=~/.py_virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
 
 # ansible needs sqlite3
 # macOS provides an older sqlite3.
