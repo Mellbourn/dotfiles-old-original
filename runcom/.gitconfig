@@ -2,7 +2,6 @@
 	name = Klas Mellbourn
 [core]
 	excludesfile = ~/.gitignore_global
-	editor = vim
 [commit]
 	template = ~/.stCommitMsg
 [mergetool]
