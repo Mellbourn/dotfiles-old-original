@@ -42,6 +42,7 @@ apps=(
     pyenv
     pyenv-virtualenv
     pyenv-virtualenvwrapper
+    reattach-to-user-namespace
     thefuck
     tig
     tldr
