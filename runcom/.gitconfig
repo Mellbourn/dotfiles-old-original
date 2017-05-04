@@ -10,7 +10,6 @@
     trustExitCode = true
 [difftool]
     prompt = false
-    trustExitCode = true
 [diff]
     tool = kdiff3
 	guitool = vscode
