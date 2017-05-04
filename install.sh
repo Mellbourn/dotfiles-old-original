@@ -75,6 +75,7 @@ casks=(
     keeweb
     keycue
     logitech-gaming-software
+    minikube
     plex-media-player
     rowanj-gitx
     skype
