@@ -3,6 +3,6 @@ bind generic T !git difftool %(commit)^..%(commit)
 bind generic W !git reflog
 bind refs    3 !git rebase -i %(branch)
 bind refs    M !git merge %(branch)
-bind refs    R !git reset --hard %(commit)
+bind refs    Z !git reset --hard %(commit)
 set main-view-date = relative
 set tree-view-date = relative
