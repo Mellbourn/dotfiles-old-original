@@ -38,11 +38,6 @@ if [ -f /usr/local/share/liquidprompt ]; then
 fi
 
 ### version managers
-if [ -f /usr/local/opt/nvm/nvm.sh ]; then
-  export NVM_DIR="$HOME/.nvm"
-  . "/usr/local/opt/nvm/nvm.sh"
-fi
-
 export PATH="$PATH:$(yarn global bin)"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
