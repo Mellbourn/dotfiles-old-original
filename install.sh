@@ -158,3 +158,20 @@ defaults write com.apple.Safari InstallExtensionUpdatesAutomatically -bool true
 
 # set TextEdit default format to plain text
 defaults write com.apple.TextEdit RichText -int 0
+
+###############################################################################
+# tmux plugins                                                                #
+###############################################################################
+TMUX_DIR="${HOME}/.tmux/"
+if [ ! -d $TMUX_DIR ]; then
+  mkdir $TMUX_DIR
+fi
+
+TMUX_PLUGINS_DIR="${TMUX_DIR}/plugins"
+if [ ! -d $TMUX_PLUGINS_DIR ]; then
+  mkdir $TMUX_PLUGINS_DIR
+fi
+
+if [ ! -d "${TMUX_PLUGINS_DIR}/tpm/" ]; then
+  git clone https://github.com/tmux-plugins/tpm "${TMUX_PLUGINS_DIR}/tpm" && ~/.tmux/plugins/tpm/bin/install_plugins
+fi
