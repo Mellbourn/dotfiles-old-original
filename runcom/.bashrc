@@ -4,3 +4,5 @@ if [ -f /usr/local/opt/nvm/nvm.sh ]; then
 fi
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# stop duplicates in history
+export HISTCONTROL=ignoreboth:erasedups

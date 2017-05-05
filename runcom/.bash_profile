@@ -17,7 +17,6 @@ fi
 ### environment variables
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
-export HISTCONTROL=ignoreboth
 export EDITOR=vi
 
 if [ "$USER" == "Klas" ]; then
