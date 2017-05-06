@@ -49,6 +49,7 @@ apps=(
     tmux
     tree
     watch
+    yadm
     yarn
 )
 # note: yarn will install node, which you might want to remove, since it is handled by nvm
